@@ -1,23 +1,31 @@
 const data = [
     { imgsrc: 'image/p1.jpeg',Video:'video/mod_view.mp4',features: ['Drag Headshot','One Time Apply','Unable To By(By Checking)','Fully AI Control','100% No Ban Issue(Even Patch)','Android & IOS']},
-    {imgsrc: 'image/p5.jpg',Video:'video/p2.mp4',features: ['• DRAG AIMBOT','• HEADLOCK','• AIMFOV','• MACRO AIMBOT','• MACRO AIMBOT','• 100% RANK PUSH PANEL','• NO RECOIL','• NO BACKLIST']},
-    {imgsrc: 'image/p3.png',features: ['• SENSI-UPGRADE','• PREMIUM-SETEDIT','• Movement_Speed_Smooth','• Less Recoil Regedit','• PREMIUM APPS','* X,Y Fileds']},
-    {imgsrc: 'image/p4.png',features: ['• Drag Headshot 3.0 ','• One Time Apply','• Unable To By(By Checking)','• Fully AI Control','• 100% No Ban Issue(Even Patch)','• Android & IOS']},
-    {imgsrc: 'image/op.jpg',features: ['* Custom Regedit','* Emulators','* FPS lock upto 160','* Less Recoil Regedit','* Premium Tweaks','* X,Y Fileds']},
-    {imgsrc: 'image/p5.jpg',features: ['* Custom Regedit','* Emulators','* FPS lock upto 160','* Less Recoil Regedit','* Premium Tweaks','* X,Y Fileds']},
+     {imgsrc: 'image/p2.jpeg',Video:'video/P2.png',features: [' CUSTOM REGEDIT','EMULATORS','FPS LOCK UPTP 160','EMU SETTINGS','MONITOR FIX','LESS RECOIL REGEDIT','2X SECRET','PREMIUM TWEAKS']},
+    {imgsrc: 'image/DLL.jpg',Video:'video/mod_view.mp4',features: ['DLL INJECT PANELL','FULLY HIDDEN IN STREAM','NO LOGIN PAGE','100%ANTIBAN','CUSTOMIZE HOTKEY FEATURES','NOBODY CAN FIND PANEL IN PC CHECK','AIMBOT DRAG','SNIPER SCOPE','TRANSPARENT LOCATION']},
+    {imgsrc: 'image/p3.png',Video:'video/mod_view.mp4',features: [' ᴀɪᴍʟᴏᴄᴋ ʀᴇɢ ᴇᴅɪᴛ ᴘᴀʀᴀ ꜱᴇɴꜱɪ','• ᴀɴᴛɪʙᴀɴ & ᴀɴᴛɪʙʟᴀᴄᴋʟɪꜱᴛ','• ᴀɪᴍʟᴏᴄᴋ','• ᴀɪᴍʟᴏᴄᴋ','ɴᴏʀᴍᴀʟ ꜱᴄʀᴏᴘᴇ ᴀɪᴍ','• ᴀʟᴏᴋ ꜰɪx']},
+    {imgsrc: 'image/p5.png',Video:'video/mod_view.mp4',features: ['REDWIN EMULATORS','Best paid emulator','red win runs smooth on low end pc','red win give dtable FBS 160','NO aim shake','no crash',]},
+    {imgsrc: 'image/p4.jpg',Video:'video/mod_view.mp4',features: ['ULTRA EGO FPS','Best paid emulator','red win runs smooth on low end pc','red win give dtable FBS 160','NO aim shake','no crash',]},
+     {imgsrc: 'image/p6.jpg',Video:'video/mod_view.mp4',features: ['ULTRA EGO FPS','Best paid emulator','red win runs smooth on low end pc','red win give dtable FBS 160','NO aim shake','no crash',]},
+      {imgsrc: 'image/p7.jpg',Video:'video/mod_view.mp4',features: ['ULTRA EGO FPS','Best paid emulator','red win runs smooth on low end pc','red win give dtable FBS 160','NO aim shake','no crash',]},
+
+
+
+
+
     ]
+    
 
  
 function addProduct(src,featureTexts,Video) {
-	
-	const details=`
+    
+    const details=`
 Hi,
 I Need a Product From You👇
 *Product Details:*
 ο ${featureTexts.join('\nο ')}
 
-*Link* : ${window.location.hostname+'/product/'+src}
-`	
+*Link* : ${window.location.hostname+'/product/'+src};
+`   
 const url="https://api.whatsapp.com/send?phone=9345916715&text="+encodeURIComponent(details)
             const productDiv = document.createElement('div');
             productDiv.classList.add('product');
@@ -66,25 +74,25 @@ let observer;
 try{
  observer =new IntersectionObserver((entries)=>{
 
-	entries.forEach((entry)=>{
-		if(entry.isIntersecting){
-			entry.target.classList.add('show')
-		}
-		else{
-			entry.target.classList.remove('show')
+    entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('show')
+        }
+        else{
+            entry.target.classList.remove('show')
 
-		}
-	})
+        }
+    })
 })
 
 }
 catch(e){
-	hidden_ele=document.querySelectorAll('.hidden');
+    hidden_ele=document.querySelectorAll('.hidden');
 
-	hidden_ele.forEach((ele)=>{
-			ele.classList.add('show')
+    hidden_ele.forEach((ele)=>{
+            ele.classList.add('show')
 
-	})
+    })
 }
 
 hidden_ele=document.querySelectorAll('.hidden');
